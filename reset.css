@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--colorTitle);
   /* text-align: center; */
 }
-
+  
 p {
   margin: 0;
 }
@@ -61,6 +61,8 @@ button {
 
 
 
+/************************** layout */
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -76,11 +78,7 @@ button {
   flex: 0 0 auto;
 }
 
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 25px;
-}
+
 
 /******************** tehnical classes */
 
@@ -95,4 +93,10 @@ button {
   content: "";
   display: table;
   clear: both;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 0 25px;
+  margin: 0 auto;
 }
