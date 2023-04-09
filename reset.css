@@ -1,3 +1,4 @@
+
 :root {
   --colorTitle: #b46262;
 }
@@ -59,7 +60,6 @@ button {
 }
 
 
-
 /************************** layout */
 
 .wrapper {
@@ -77,8 +77,8 @@ button {
   flex: 0 0 auto;
 }
 
-/******************** tehnical classes */
 
+/******************** tehnical classes */
 
 .list-reset {
   list-style-type: none;
