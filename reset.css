@@ -24,15 +24,9 @@ body {
   /* font-family: "Montserrat-Regular", sans-serif; */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   margin-bottom: 1em;
-
   color: var(--colorTitle);
   /* text-align: center; */
 }
@@ -41,9 +35,7 @@ p {
   margin: 0;
 }
 
-ul,
-ol,
-dl {
+ul, ol, dl {
   /* .list-reset */
 }
 
