@@ -1,6 +1,7 @@
 :root {
   --colorTitle: #b46262;
-
+  --container-width: 1170px;
+  --container-offset: 15px;
 }
 
 html {
@@ -22,6 +23,7 @@ body {
 
 body {
   margin: 0;
+  min-width: 320px;
   /* font-family: "Montserrat-Regular", sans-serif; */
 }
 
@@ -40,34 +42,26 @@ ul, ol, dl {
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-button {
-  border: none;
-  outline: none;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
+  /* color: inherit; */
   cursor: pointer;
 }
 
 
 
-/************************** layout */
+/****************************** layout */
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
+  overflow: hidden; /* если используете на сайте position: sticky - уберите эту настройку */
 }
 
 .main {
@@ -80,12 +74,12 @@ button {
 
 
 
-/******************** tehnical classes */
+/****************************** tehnical classes */
 
-.list-reset {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-offset);
+  margin: 0 auto;
 }
 
 .clearfix::after {
@@ -94,8 +88,44 @@ button {
   clear: both;
 }
 
-.container {
-  max-width: 1250px;
-  padding: 0 25px;
-  margin: 0 auto;
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+
+/****************************** reset */
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-reset {
+  border: none;
+  /* outline: none; */
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+.input-reset::-webkit-search-decoration,
+.input-reset::-webkit-search-cancel-button,
+.input-reset::-webkit-search-results-button,
+.input-reset::-webkit-search-results-decoration {
+  display: none;
 }
