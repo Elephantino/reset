@@ -126,6 +126,11 @@ a {
   border-radius: 0;
   background-color: #fff;
 }
+
+input::-ms-clear {
+  display: none;
+}
+
 .input-reset::-webkit-search-decoration,
 .input-reset::-webkit-search-cancel-button,
 .input-reset::-webkit-search-results-button,
