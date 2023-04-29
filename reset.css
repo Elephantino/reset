@@ -113,10 +113,11 @@ a {
 
 .button-reset {
   border: none;
-  /* outline: none; */
+  outline: none; 
   background-color: transparent;
   color: inherit;
   cursor: pointer;
+  padding: 0;
 }
 
 .input-reset {
@@ -127,13 +128,18 @@ a {
   background-color: #fff;
 }
 
-input::-ms-clear {
-  display: none;
-}
-
 .input-reset::-webkit-search-decoration,
 .input-reset::-webkit-search-cancel-button,
 .input-reset::-webkit-search-results-button,
 .input-reset::-webkit-search-results-decoration {
   display: none;
 }
+
+input::-ms-clear {
+  display: none;
+}
+
+
+
+
+/****************************************************************/
