@@ -106,10 +106,6 @@ a {
 /****************************** reset */
 
 
-input::-ms-clear {
-  display: none;
-}
-
 .list-reset {
   list-style-type: none;
   margin: 0;
@@ -141,7 +137,9 @@ input::-ms-clear {
 }
 
 
-
+input::-ms-clear {
+  display: none;
+}
 
 
 
